@@ -5,7 +5,7 @@ class SurveysController < ApplicationController
   end
 
   def show
-    if(curren_user == Survey.find(params[:id]).user_id)
+    if(current_user == Survey.find(params[:id]).user_id)
       @survey = Survey.find(params[:id])
     end
   end
