@@ -1,4 +1,9 @@
 OSurvey::Application.routes.draw do
+  
+  resources :surveys
+  resources :answers
+  resources :questions
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
