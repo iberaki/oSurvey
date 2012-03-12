@@ -11,8 +11,8 @@
 /db/*.sqlite3
 
 # Ignore shema.rb an database.yml
-/config/database.yml
-/db/shema.rb
+config/database.yml
+db/shema.rb
 
 # Ignore all logfiles and tempfiles.
 /log/*.log
