@@ -1,2 +1,10 @@
 <h1>Surveys#index</h1>
 <p>Find me in app/views/surveys/index.html.erb</p>
+<%= 'string' %>
+<ul>
+<% @surveys.each do |item| %>
+<li>
+<%= item.name %> <%= link_to 'show', survey_path(item.id) %> 
+</li>
+<% end %>
+</ul>
