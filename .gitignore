@@ -12,7 +12,7 @@
 
 #u Ignore shema.rb an database.yml
 config/database.yml
-/db/shema.rb
+db/shema.rb
 
 # Ignore all logfiles and tempfiles.
 /log/*.log
