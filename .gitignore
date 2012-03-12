@@ -18,3 +18,4 @@ db/shema.rb
 /log/*.log
 /log/*
 /tmp
+*.swp
