@@ -10,10 +10,11 @@
 # Ignore the default SQLite database.
 /db/*.sqlite3
 
-# Ignore shema.rb an database.yml
+#u Ignore shema.rb an database.yml
 config/database.yml
-db/shema.rb
+/db/shema.rb
 
 # Ignore all logfiles and tempfiles.
 /log/*.log
+/log/*
 /tmp
