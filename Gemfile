@@ -11,6 +11,7 @@ gem 'json'
 gem "haml"
 gem 'devise'
 
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -33,3 +34,7 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug'
 
+group :test, :development do
+  gem 'rspec'
+  gem 'rspec-rails'
+end

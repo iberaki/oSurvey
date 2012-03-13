@@ -18,7 +18,7 @@ class SurveysController < ApplicationController
     @survey = Survey.new(params[:survey])
 
     if @survey.save
-      redirect_to(surveys_path, :notice => t('notice.survey.create_succesfull'))
+      redirect_to(surveys_path, :notice => t('notice.survey.create_successfull'))
     else
       render :action => 'new'
     end
@@ -29,7 +29,7 @@ class SurveysController < ApplicationController
     @survey.attributes = params[:survey]
 
     if @survey.save
-      redirect_to(surveys_path, :notice => t('notice.survey.update_succesfull'))
+      redirect_to(surveys_path, :notice => t('notice.survey.update_successfull'))
     else
       render :action => 'edit'
     end
