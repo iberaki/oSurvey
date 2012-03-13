@@ -1,0 +1,22 @@
+!!! XML UTF-8
+!!!
+%html
+  %head
+    %title OSurvey
+  = stylesheet_link_tag    "application"
+  = javascript_include_tag "application"
+  = csrf_meta_tags
+%body
+  - if (flash[:notice] || flash[:error] || flash[:debug])
+    - notification_class = flash[:notice] ? 'notice' : 'error'
+    .container.notification{:class => "#{notification_class}"}
+      .row
+        #notification{:class => "#{notification_class}"}
+          - if flash[:notice]
+            = flash[:notice]
+          - elsif flash[:error]
+            = flash[:error]
+          - elsif flash[:debug]
+            = flash[:debug]
+
+  = yield

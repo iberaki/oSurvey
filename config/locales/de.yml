@@ -1,6 +1,10 @@
 de:
+  notice:
+    question:
+      create_successful: "Frage wurde erfolgreich hinzugefügt"
   views:
     question:
+      new_question: "Neue Frage"
       form:
         edit_question: "Frage bearbeiten"
         issues: "Frage"
