@@ -14,7 +14,7 @@ class QuestionsController < ApplicationController
   def create
     @question = Question.new(params[:question])
 
-    if @question.save
+    if @question.issues.size >= 10 && @question.save
       redirect_to(questions_path, :notice => t('notice.question.create_succesful'))
     else
       render :action => 'new'
