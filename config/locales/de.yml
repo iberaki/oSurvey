@@ -2,6 +2,12 @@ de:
   notice:
     question:
       create_successful: "Frage wurde erfolgreich hinzugefügt"
+      update_successful: "Frage wurde erfolgreich aktualisiert"
+  
+  terms:
+    form:
+      edit: "bearbeiten"
+
   views:
     question:
       new_question: "Neue Frage"
