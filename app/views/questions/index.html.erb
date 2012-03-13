@@ -1,2 +1,9 @@
-<h1>Questions#index</h1>
-<p>Find me in app/views/questions/index.html.erb</p>
+<h1>Fragen:</h1>
+<ul>
+<% @questions.each do |item| %>
+<li>
+<%= link_to item.issues, question_path(item.id)%>
+<%= link_to I18n.t('terms.form.edit'), edit_question_path(item.id)%>
+</li>
+<% end %>
+</ul>

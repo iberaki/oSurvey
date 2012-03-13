@@ -1,10 +1,10 @@
-<h1>Surveys#index</h1>
-<p>Find me in app/views/surveys/index.html.erb</p>
-<%= 'string' %>
+<h1>Erhebungsbogen</h1>
+<p>Es wurden folgende Fragen beantwortet!</p>
+<%#= 'string' Kommentar !!!! %> 
 <ul>
 <% @surveys.each do |item| %>
 <li>
-<%= item.name %> <%= link_to 'show', survey_path(item.id) %> 
+<%= link_to item.name , survey_path(item.id) %> <%= link_to 'edit', edit_survey_path(item.id) %> <%= link_to 'delete', nil %>
 </li>
 <% end %>
 </ul>
